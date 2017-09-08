@@ -1,0 +1,5 @@
+$(function() {
+    $('#calendar-section').fullCalendar({
+
+    });
+});
