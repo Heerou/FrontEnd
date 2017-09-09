@@ -120,3 +120,108 @@ section
                     background blueviolet
                 #violet
                     background violet
+
+        #calendar-section
+            text-align center
+            width 85%
+            margin 0 auto
+            .fc-scroller 
+                overflow-y hidden !important
+            .fc-slats,
+            .fc-content-skeleton,
+            .fc-bgevent-skeleton
+                pointer-events none
+            .fc-bgevent,
+            .fc-event-container
+                pointer-events auto
+            .fc-right
+                margin-right 60px
+            .fc-left
+                margin-left 60px
+            .fc-right,
+            .fc-left
+                button
+                    background none
+                    box-shadow none
+                    outline none
+                    border none
+            .fc-center
+                color khaki
+                font-size 1em            
+            .fc-day-grid-container                
+                overflow hidden
+            .fc-other-month
+                visibility hidden
+            .fc-day,
+            .fc-day-number
+                text-align center
+                cursor pointer
+                z-index 99999
+                position relative
+            .fc-row
+                min-height 1.5em
+            .fc-widget-header,
+            .fc-widget-content
+                border none
+                font-size 1.15em
+            .fc-today
+                background transparent
+                color khaki
+            .fc-icon-right-single-arrow:after,
+            .fc-icon-left-single-arrow:after
+                color gray
+            .with-event                          
+                border 2px solid khaki
+                border-radius 50%
+                display block
+                height 30px
+                width 30px
+                left 0
+                right 0
+                margin 4px 13px                
+            .new-event-date
+                position relative
+                border 2px solid transparent
+                border-radius 50%
+                display block
+                height 28px
+                width 28px
+                margin-left 8px
+            .add-event-active:after
+                background khaki
+            .td-with-event
+                color #29323f
+            .add-event-section
+                height 60px
+                line-height 60px
+                background white
+                width 100%
+                display none
+                margin-top 13px
+                z-index 99999
+                div
+                    position relative
+                    height 100%
+                    span
+                        width 0
+                        height 0
+                        border-left 6px solid transparent
+                        border-right 6px solid transparent
+                        border-bottom 6px solid white
+                        position absolute
+                        top -6px
+                    .fa
+                        position absolute
+                        right 10px
+                        top 15px
+                        color lightgray
+                        font-size 1.4em
+                    input
+                        border none
+                        display block
+                        height 100%
+                        width 100%
+                        padding 10px
+                        box-sizing border-box
+                        outline none
+                        font-size 1em
