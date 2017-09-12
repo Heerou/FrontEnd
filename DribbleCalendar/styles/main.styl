@@ -20,7 +20,7 @@ blueviolet = #8a2aff
 violet = #5800d2
 darkslategray = #2e3442
 
-html, 
+html,
 body
     height 100%
 
@@ -28,18 +28,18 @@ body
     background khaki
     font-family 'Baloo Tammudu', cursive, sans-serif;
 
-h3 
+h3
     font-size 1.7em
     font-weight normal
     margin-top 0
 
-section 
+section
     background darkslategray
     box-shadow 2.5px 10px 20px rgba(0, 0, 0, 0.5)
     margin 100px auto
     color white
-    width 380px
-    height 430px
+    width 500px
+    height 550px
     header
         height 20px
         line-height 20px
@@ -63,13 +63,13 @@ section
     article
         > .active
             display block
-        > div        
+        > div
             display none
         #choose-color-section
             width 70%
             margin 0 auto
             text-align center
-            h3 
+            h3
                 margin-bottom 60px
             > div
             // Awesome new way to put things aligned
@@ -78,7 +78,7 @@ section
                 justify-content space-between
                 margin-bottom 10px
                 // The pointer
-                span 
+                span
                     width 40px
                     height 40px
                     border-radius 50%
@@ -87,7 +87,7 @@ section
                     transition 0.3s ease all
                     &.active,
                     &:hover
-                        border-color white                    
+                        border-color white
                 #tomato
                     background tomato
                 #mediumvioletred
@@ -125,7 +125,7 @@ section
             text-align center
             width 85%
             margin 0 auto
-            .fc-scroller 
+            .fc-scroller
                 overflow-y hidden !important
             .fc-slats,
             .fc-content-skeleton,
@@ -147,8 +147,8 @@ section
                     border none
             .fc-center
                 color khaki
-                font-size 1em            
-            .fc-day-grid-container                
+                font-size 1em
+            .fc-day-grid-container
                 overflow hidden
             .fc-other-month
                 visibility hidden
@@ -170,7 +170,7 @@ section
             .fc-icon-right-single-arrow:after,
             .fc-icon-left-single-arrow:after
                 color gray
-            .with-event                          
+            .with-event
                 border 2px solid khaki
                 border-radius 50%
                 display block
@@ -178,7 +178,7 @@ section
                 width 30px
                 left 0
                 right 0
-                margin 4px 13px                
+                margin 6px 30px
             .new-event-date
                 position relative
                 border 2px solid transparent
@@ -225,3 +225,20 @@ section
                         box-sizing border-box
                         outline none
                         font-size 1em
+        #event-section
+          width 95%
+          margin 0 auto
+          text-align center
+          #wheather
+            span
+              display flex
+              align-items center
+              justify-content center
+              .fa
+                font-size 3em
+                margin-right 10px
+              h4
+                font-size 3em
+                font-weight 300
+                margin 0
+          #event-description
