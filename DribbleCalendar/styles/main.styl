@@ -61,10 +61,13 @@ section
             font-size 0.9em
             cursor pointer
     article
+        height 100%
         > .active
             display block
         > div
             display none
+            position relative
+            height 100%
         #choose-color-section
             width 70%
             margin 0 auto
@@ -229,6 +232,7 @@ section
           width 95%
           margin 0 auto
           text-align center
+          margin-top 30px
           #wheather
             span
               display flex
@@ -242,3 +246,37 @@ section
                 font-weight 300
                 margin 0
           #event-description
+            position absolute
+            bottom 70px
+            padding 10px
+            background white
+            color #333
+            padding-bottom 25px
+            &:before
+              content ''
+              background rgba(255, 255, 255, 0.3)
+              position absolute
+              height 10px
+              margin 0 auto
+              left 0
+              right 0
+              top -10px
+              width 95%
+            h4
+              font-size 1.6em
+              margin-top 10px
+            > div
+                display flex
+                justify-content space-between
+                div
+                  padding 0.5px
+                  .fa
+                    color #8485cd
+                    display block
+                    font-size 1.8em
+                  strong
+                    text-transform uppercase
+                    font-size 0.8em
+                  p
+                    color grey
+                    font-size 0.8em
