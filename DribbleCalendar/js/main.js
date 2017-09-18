@@ -1,10 +1,34 @@
 $(function() {
+
+	 $('#show-color').on('click', function(e) {
+		 e.preventDefault();
+
+		 var $el = $(this);
+
+		 $('article > div.active').removeClass('class').fadeOut('fast');
+		 setTimeout(function(){
+			 $('#choose-color-section').fadeIn('fast').addClass('active');
+		 }, 250);
+
+		 var delay = 0;
+
+		 $('#choose-color-section > div span').each(function() {
+			 $(this).delay(delay).animate({
+				 opacity: '1',
+				 height: '40px',
+				 width: '40px'
+			 }, 100);
+
+			 delay += 35;
+		 });
+	 });
+
     $('#calendar-section').fullCalendar({
 
         firstDay: 1,
-        aspectRatio: 1.3, 
+        aspectRatio: 1.3,
         dragScroll: false,
-        
+
         header: {
             left:   'prev',
             center: 'title',

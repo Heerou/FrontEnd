@@ -1,6 +1,6 @@
 @import nib
 
-// Styulus preporcesor compile with stylus -c -w -u nib main.styl -o main.css
+// Styulus preporcesor compile with stylus -u nib -w -c main.styl -o main.css
 
 tomato = #f4565f
 mediumvioletred = #e01467
@@ -82,8 +82,9 @@ section
                 margin-bottom 10px
                 // The pointer
                 span
-                    width 40px
-                    height 40px
+                    width 0px
+                    height 0px
+					opacity 0
                     border-radius 50%
                     border 4px solid transparent
                     cursor pointer
